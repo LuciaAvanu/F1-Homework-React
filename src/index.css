@@ -1,0 +1,297 @@
+@import "./css-reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap");
+
+html {
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+.backdrop {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 556px;
+  padding: 1em;
+}
+
+@font-face {
+  font-family: "Formula1 Display-Black";
+  src: url("./fonts/Formula1-Black.ttf") format("otf");
+}
+
+@font-face {
+  font-family: "Formula1 Display-Wide";
+  src: url("./fonts/Formula1-Wide.ttf") format("otf");
+}
+
+@font-face {
+  font-family: "Formula1 Display-Regular";
+  src: url("./fonts/Formula1-Regular.ttf") format("otf");
+}
+
+@font-face {
+  font-family: "Formula1 Display-Bold";
+  src: url("./fonts/Formula1-Bold.ttf") format("otf");
+}
+
+#page-title {
+  color: black;
+  font-family: Formula1 Display-Black;
+  font-size: 2em;
+  width: 100%;
+  border: 10px solid black;
+  border-left: none;
+  border-bottom: none;
+  border-radius: 0 25px;
+  padding-top: 0.25em;
+  margin-bottom: 1em;
+}
+
+.info-container {
+  width: 100%;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  margin-bottom: 2em;
+  padding: 20px;
+}
+
+.info-container p {
+  font-size: 15px;
+  font-family: "Titillium Web", sans-serif;
+  line-height: 1.5;
+}
+
+.cards-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.driver-card {
+  background-color: white;
+  border: 2px solid black;
+  border-left: none;
+  border-bottom: none;
+  padding: 1em 1em 0 0;
+  border-radius: 0 10px;
+  /* necessary for lifting border on hover */
+  margin-bottom: 1em;
+  margin-top: 2em;
+  /* -----  */
+  width: 100%;
+  transition: all 0.05s ease-in;
+}
+.driver-card:hover {
+  margin-top: 1.5em;
+  padding-top: 1.5em;
+}
+
+.driver-card header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rank {
+  font-family: Formula1 Display-Black;
+  font-size: 42px;
+}
+
+.points {
+  display: flex;
+  flex-direction: row;
+  font-family: Formula1 Display-Wide;
+}
+
+.up-score {
+  background-color: gray;
+  border: 0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1em;
+}
+
+.up-score:hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+.points-view {
+  min-width: 80px;
+  text-align: end;
+}
+
+.points-nr {
+  font-size: 18px;
+  margin-bottom: 3px;
+  letter-spacing: 0.2px;
+}
+
+.pts {
+  font-size: 12px;
+  color: white;
+  background-color: black;
+  display: inline-block;
+  padding: 0.2em 0.7em;
+  border-radius: 5px;
+  letter-spacing: 0.5px;
+}
+
+.name {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin: 1em 0;
+  padding: 1em 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.colored-line {
+  height: 35px;
+  width: 5px;
+  margin-right: 0.5em;
+}
+
+.rbr-hov:hover {
+  border-color: #3671c6;
+}
+
+.fer-hov:hover {
+  border-color: #f91437;
+}
+
+.driver-name p:first-child {
+  font-size: 12px;
+  font-family: Formula1 Display-Regular;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+}
+.driver-name p:nth-child(2) {
+  font-size: 18px;
+  font-family: Formula1 Display-Bold;
+  letter-spacing: 0.5px;
+}
+
+.flag {
+  margin-left: auto;
+}
+
+.flag img {
+  width: 46px;
+  height: 30.7px;
+  border: 1px solid #949498;
+  border-radius: 5px;
+}
+
+.team-name {
+  color: #67676d;
+  font-family: Formula1 Display-Regular;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  margin-bottom: 1em;
+}
+
+.driver-image-section {
+  height: 167px;
+  background-image: url("https://www.formula1.com/etc/designs/fom-website/images/patterns/plus-x1.png");
+  display: flex;
+  position: relative;
+}
+
+.driver-img {
+  width: 192px;
+  height: 192px;
+  position: relative;
+  bottom: 25px;
+  margin-left: auto;
+}
+
+.driver-number {
+  height: 54.62px;
+  width: 97px;
+  background-color: white;
+  position: absolute;
+  top: calc(100% - 54.62px);
+  z-index: 1;
+}
+
+.driver-number img {
+  width: 100%;
+}
+
+/* 2 cards per row */
+
+@media (min-width: 768px) {
+  #page-title {
+    font-size: 62px;
+    margin-bottom: 40px;
+  }
+  .backdrop {
+    min-width: 748px;
+  }
+  .info-container p {
+    width: 75%;
+  }
+  .cards-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3%;
+  }
+  .driver-card {
+    width: 48.5%;
+  }
+}
+
+/* 3 cards per row */
+
+@media (min-width: 1024px) {
+  .backdrop {
+    min-width: 966px;
+  }
+  .info-container p {
+    width: 66%;
+  }
+  .driver-card {
+    min-width: 300px;
+  }
+  .cards-container {
+    gap: 1.75%;
+  }
+  .driver-card {
+    width: 20%;
+  }
+  .driver-img {
+    margin-left: auto;
+  }
+  .driver-card:nth-child(-n + 3) .driver-img {
+    margin-left: calc(50% - 96px);
+  }
+}
+
+@media (min-width: 1360px) {
+  .backdrop {
+    min-width: 1300px;
+  }
+  .info-container p {
+    width: 45%;
+  }
+  .driver-card {
+    width: 23%;
+  }
+  .driver-card:nth-child(-n + 3) {
+    width: 32%;
+  }
+}
