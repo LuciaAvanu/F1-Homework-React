@@ -1,5 +1,7 @@
+import { useState, useEffect } from "react";
+
 export const DriverCard = (props) => {
-  const {
+  let {
     firstName,
     lastName,
     number,
@@ -7,17 +9,37 @@ export const DriverCard = (props) => {
     team,
     points,
     image,
-    country,
     hex,
+    flagSrc,
+    incrementScore,
   } = props;
-  const index = props.index;
 
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
+  const handleUpScore = () => {
+    incrementScore(index);
+  };
+
+  const index = props.index;
   return (
-    <div className="driver-card">
+    <div
+      className="driver-card"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      style={isHovered ? { borderColor: hex } : { borderColor: "black" }}
+    >
       <header>
         <div className="rank">{index + 1}</div>
         <div className="points">
-          <button className="up-score">
+          <button className="up-score" onClick={handleUpScore}>
             <img src="up-arrow.svg"></img>
           </button>
           <div className="points-view">
@@ -34,7 +56,9 @@ export const DriverCard = (props) => {
           <p>{lastName}</p>
         </div>
 
-        <section className="flag"></section>
+        <section className="flag">
+          <img src={`${flagSrc}`}></img>
+        </section>
       </section>
       <div className="team-name">{team}</div>
 
