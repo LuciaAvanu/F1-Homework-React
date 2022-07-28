@@ -28,7 +28,7 @@ export const DriverCard = (props) => {
       </header>
 
       <section className="name">
-        <div className="colored-line"></div>
+        <div className="colored-line" style={{ backgroundColor: hex }}></div>
         <div className="driver-name">
           <p>{firstName}</p>
           <p>{lastName}</p>
