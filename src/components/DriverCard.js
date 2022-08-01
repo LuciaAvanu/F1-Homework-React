@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Flag from "react-world-flags";
 
 export const DriverCard = (props) => {
   let {
@@ -10,8 +11,8 @@ export const DriverCard = (props) => {
     points,
     image,
     hex,
-    flagSrc,
     incrementScore,
+    country,
   } = props;
 
   const [isHovered, setIsHovered] = useState(false);
@@ -57,7 +58,7 @@ export const DriverCard = (props) => {
         </div>
 
         <section className="flag">
-          <img src={`${flagSrc}`}></img>
+          <Flag height="30.7" width="46" code={country} />
         </section>
       </section>
       <div className="team-name">{team}</div>
