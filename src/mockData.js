@@ -8,7 +8,7 @@ export const mockData = [
     team: "Mercedes",
     points: 109,
     image: "https://i.ibb.co/Fs2XJFn/hamilton.png",
-    country: "United Kingdom",
+    country: "GB",
     hex: "#6CD3BF",
   },
   {
@@ -20,7 +20,7 @@ export const mockData = [
     team: "Mercedes",
     points: 128,
     image: "https://i.ibb.co/f4zt6Jq/russel.png",
-    country: "United Kingdom",
+    country: "GB",
     hex: "#6CD3BF",
   },
   {
@@ -32,7 +32,7 @@ export const mockData = [
     team: "Red Bull Racing",
     points: 208,
     image: "https://i.ibb.co/BcBmc14/verstappen.png",
-    country: "Netherlands",
+    country: "NL",
     hex: "#3671C6",
   },
   {
@@ -44,7 +44,7 @@ export const mockData = [
     team: "Red Bull Racing",
     points: 151,
     image: "https://i.ibb.co/pRTZDMg/perez.png",
-    country: "Mexico",
+    country: "MX",
     hex: "#3671C6",
   },
   {
@@ -56,7 +56,7 @@ export const mockData = [
     team: "McLaren",
     points: 64,
     image: "https://i.ibb.co/pRK4GW5/norris.png",
-    country: "United Kingdom",
+    country: "GB",
     hex: "#3671C6",
   },
   {
@@ -68,7 +68,7 @@ export const mockData = [
     team: "McLaren",
     points: 17,
     image: "https://i.ibb.co/Jtbwrd0/ricardo.png",
-    country: "Australia",
+    country: "AU",
     hex: "#3671C6",
   },
   {
@@ -80,7 +80,7 @@ export const mockData = [
     team: "Alpine",
     points: 29,
     image: "https://i.ibb.co/jMLB0zJ/alonso.png",
-    country: "Spain",
+    country: "ES",
     hex: "#2392D1",
   },
   {
@@ -92,7 +92,7 @@ export const mockData = [
     team: "Alpine",
     points: 52,
     image: "https://i.ibb.co/QdDMyZv/ocon.png",
-    country: "France",
+    country: "FR",
     hex: "#2392D1",
   },
   {
@@ -104,7 +104,7 @@ export const mockData = [
     team: "Aston Martin",
     points: 3,
     image: "https://i.ibb.co/WgpkS4f/stroll.png",
-    country: "Canada",
+    country: "CA",
     hex: "#358C75",
   },
   {
@@ -116,7 +116,7 @@ export const mockData = [
     team: "Aston Martin",
     points: 15,
     image: "https://i.ibb.co/xY4WYBc/vettel.png",
-    country: "Germany",
+    country: "DE",
     hex: "#358C75",
   },
   {
@@ -128,7 +128,7 @@ export const mockData = [
     team: "Ferrari",
     points: 170,
     image: "https://i.ibb.co/ZWm9cdX/leclerc.png",
-    country: "Monaco",
+    country: "MC",
     hex: "#F91437",
   },
   {
@@ -140,7 +140,7 @@ export const mockData = [
     team: "Ferrari",
     points: 133,
     image: "https://i.ibb.co/JRVmVw4/sainz.png",
-    country: "Spain",
+    country: "ES",
     hex: "#F91437",
   },
   {
@@ -152,7 +152,7 @@ export const mockData = [
     team: "AlphaTauri",
     points: 16,
     image: "https://i.ibb.co/R6nYsRj/gasly.png",
-    country: "France",
+    country: "FR",
     hex: "#5E8FAA",
   },
   {
@@ -164,7 +164,7 @@ export const mockData = [
     team: "AlphaTauri",
     points: 11,
     image: "https://i.ibb.co/x6VcZDs/tsunoda.png",
-    country: "Japan",
+    country: "JP",
     hex: "#5E8FAA",
   },
   {
@@ -176,7 +176,7 @@ export const mockData = [
     team: "Alfa Romeo",
     points: 46,
     image: "https://i.ibb.co/Qf0fBmX/bottas.png",
-    country: "Finland",
+    country: "FI",
     hex: "#C92C4A",
   },
   {
@@ -188,7 +188,7 @@ export const mockData = [
     team: "Alfa Romeo",
     points: 5,
     image: "https://i.ibb.co/9hQGWzV/zsou.png",
-    country: "China",
+    country: "CN",
     hex: "#C92C4A",
   },
   {
@@ -200,7 +200,7 @@ export const mockData = [
     team: "Haas F1 Team",
     points: 12,
     image: "https://i.ibb.co/yRntVLX/schumacher.png",
-    country: "Germany",
+    country: "DE",
     hex: "#B7BBBD",
   },
   {
@@ -212,7 +212,7 @@ export const mockData = [
     team: "Haas F1 Team",
     points: 22,
     image: "https://i.ibb.co/27YnfXb/magnussen.png",
-    country: "Denmark",
+    country: "DK",
     hex: "#B7BBBD",
   },
   {
@@ -224,7 +224,7 @@ export const mockData = [
     team: "Williams",
     points: 0,
     image: "https://i.ibb.co/27mk9VC/latifi.png",
-    country: "Canada",
+    country: "CA",
     hex: "#37BFDC",
   },
   {
@@ -236,7 +236,7 @@ export const mockData = [
     team: "Williams",
     points: 3,
     image: "https://i.ibb.co/M6RWgFd/albon.png",
-    country: "Thailand",
+    country: "PH",
     hex: "#37BFDC",
   },
 ];

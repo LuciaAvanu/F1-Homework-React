@@ -22,9 +22,6 @@ function App() {
     ]);
   };
 
-  const flagsLink =
-    "http://purecatamphetamine.github.io/country-flag-icons/3x2";
-
   return (
     <div className="backdrop">
       <h1 id="page-title">F1 Drivers 2022</h1>
@@ -36,7 +33,6 @@ function App() {
             {...driver}
             index={index}
             incrementScore={incrementScore}
-            flagSrc={`${flagsLink}/${driver.country}.svg`}
           />
         ))}
       </div>
