@@ -1,11 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Flag from "react-world-flags";
 
 export const DriverCard = (props) => {
-  let {
+  const {
     firstName,
     lastName,
-    number,
     numberImg,
     team,
     points,
