@@ -1,7 +1,7 @@
 import { InfoContainer } from "./components/InfoContainer";
 import { DriverCard } from "./components/DriverCard";
 import { mockData } from "./mockData";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const sortData = (data) => {
   return data.sort((a, b) => {
